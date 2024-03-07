@@ -1,0 +1,181 @@
+
+.hero
+  position: relative
+  width: 100vw
+  height: 52.5em
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), linear-gradient(153.55deg, rgba(0, 0, 0, 0.4) 39.24%, rgba(0, 0, 0, 0) 59.89%), url('/resources/images/fa74c541b2995037f5da99090ebd736f (1).jpeg')
+  background-size: cover
+  background-position: center
+
+  & .hero__header
+    display: flex
+    flex-direction: row
+    position: absolute
+    width: 100vw
+    height: 5em
+    left: 0
+    top: 0
+    background: rgba(0, 0, 0, 0.1)
+    backdrop-filter: blur(6px)
+
+    & .hero__header-logo
+      position: absolute
+      width: 6.5em
+      height: 2.5em
+      left: 8em
+      top: 1.25em
+
+    & .hero__header-menu
+      position: absolute
+      display: flex
+      flex-direction: row
+      justify-content: flex-end
+      align-items: center
+      padding: 0
+      gap: 2em
+      right: 8em
+      top: 1.3em
+
+      & .hero__burger-menu
+        width: 2.5em
+        height: 2.25em
+        display: flex
+        justify-content: space-around
+        flex-flow: column nowrap
+        z-index: 10
+        cursor: pointer
+
+        .burger-line
+          display: block
+          width: 2rem
+          height: 0.25rem
+          border-radius: 10px
+          background-color: white
+          transform-origin: 1px
+          transition: all 0.3s linear
+          margin-bottom: 0.4rem
+
+      .header__language span
+        font-family: 'Montserrat', sans-serif
+        font-style: normal
+        font-weight: 400
+        line-height: 160%
+        color: white
+
+    & .hero__menu-container
+      display: none
+      position: absolute
+      top: 5em
+      left: 0
+      width: 100%
+      background-color: #333
+      padding: 20px
+      box-sizing: border-box
+
+    a
+      display: block
+      color: white
+      padding: 10px 20px
+      text-decoration: none
+
+      &:hover
+        background-color: #444
+
+  .hero__content
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    padding: 0
+    gap: 4em
+    position: absolute
+    width: 60vw
+    height: 18.7em
+    left: 8em
+    top: 12em
+
+    .hero__main-text
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      gap: 0.8em
+
+      .hero__title
+        font-family: 'Montserrat', sans-serif
+        font-style: normal
+        font-weight: 700
+        font-size: 4em
+        line-height: 140%
+        color: #FFFFFF
+
+      .hero__small-text
+        font-family: 'Montserrat', sans-serif
+        font-style: normal
+        font-weight: 400
+        font-size: 1em
+        line-height: 160%
+        color: #FFFFFF
+        width: 450px
+
+  .hero__button
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 1.25em 2em
+    gap: 0.6em
+    width: 12.5em
+    height: 3.5em
+    background: #EC6C00
+    font-family: 'Montserrat', sans-serif
+    color: #FFFFFF
+    cursor: pointer
+
+  .hero__social-links
+    width: 12.25em
+    height: 1.5em
+    position: absolute
+    top: 48em
+    right: 8em
+    gap: 1.25em
+    opacity: 0.8px
+    display: flex
+    flex-direction: row
+
+    img
+      width: 1.5em
+      height: 1.5em
+
+//---------------------------------------------------------------
+// @media (max-width: 768px)
+ 
+// .hero
+//   .hero__header
+//     .hero__header-logo
+//       left: 12em
+
+//     .hero__header-menu
+//       right: 12em
+
+//   .hero__content
+
+//     width: 70vw
+//     left: 12em
+//     top: 16em
+ 
+// ----------------------------------------------------------
+//   @media (max-width: 480px)
+  
+
+// .hero
+//   .hero__header
+//     .hero__header-logo
+//       left: 2em
+
+//     .hero__header-menu
+//       right: 2em
+
+//   .hero__content
+
+//     width: 70vw
+//     left: 2em
+//     top: 3em
+  
