@@ -2,58 +2,72 @@
     display: flex
     flex-direction: column
     align-items: flex-start
-    padding: 5em 8em
-    gap: 4em
+    padding: 5rem 8rem
+    gap: 4rem
     width: 100vw
-    height: 29em
+    height: auto
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), #253469
+
+    @include media('<=md')
+        padding: 3rem 4rem
+
+    @include media('<=sm')
+        padding: 1rem 2rem
 
     .menu__top
         display: flex
         flex-direction: row
         align-items: flex-start
-        padding: 0px
-        height: 2.7em
+        padding: 0rem
+        height: 2.7rem
 
         .menu__logo
-            width: 6.5em
-            height: 2.5em
+            width: 6.5rem
+            height: 2.5rem
 
     .menu__main-content
         display: flex
         flex-direction: row
+        justify-content: space-between
         align-items: flex-start
-        padding: 0em
-        gap: 7.5em
-        width: 67.5em
-        height: 12em
+        padding: 0rem
+        gap: 7.5rem
+        width: 67.5vw
+        height: auto
+
+        @include media('<=sm')
+            padding: 0rem
+            gap: 2rem
+            width: 80vw
+
+        @include media('<=xxs')
+            flex-direction: column
 
         .menu__column
             display: flex
             flex-direction: column
             align-items: flex-start
-            padding: 0em
-            gap: 1em
-            width: 17.5vw
-            height: 12em
+            padding: 0rem
+            gap: 1rem
+            max-width: 30vw
+            @include media('<=xxs')
+                max-width: 70vw
 
             .menu__link
                 font-family: Montserrat
-                font-size: 1em
+                font-size: 1rem
                 font-weight: 400
-                line-height: 1.6em
-                letter-spacing: 0em
+                line-height: 1.6rem
+                letter-spacing: 0rem
                 text-align: left
                 color: white
                 text-decoration: none
-                
-
 
             .menu__text
                 font-family: Montserrat
-                font-size: 1em
+                font-size: 1rem
                 font-weight: 400
-                line-height: 1.6em
-                letter-spacing: 0em
+                line-height: 1.6rem
+                letter-spacing: 0rem
                 text-align: left
                 color: white

@@ -2,7 +2,7 @@
 .hero
   position: relative
   width: 100vw
-  height: 52.5em
+  height: 52.5rem
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), linear-gradient(153.55deg, rgba(0, 0, 0, 0.4) 39.24%, rgba(0, 0, 0, 0) 59.89%), url('/resources/images/fa74c541b2995037f5da99090ebd736f (1).jpeg')
   background-size: cover
   background-position: center
@@ -12,7 +12,7 @@
     flex-direction: row
     position: absolute
     width: 100vw
-    height: 5em
+    height: 5rem
     left: 0
     top: 0
     background: rgba(0, 0, 0, 0.1)
@@ -20,10 +20,12 @@
 
     & .hero__header-logo
       position: absolute
-      width: 6.5em
-      height: 2.5em
-      left: 8em
-      top: 1.25em
+      width: 6.5rem
+      height: 2.5rem
+      left: 8rem
+      top: 1.25rem
+      @include media('<=sm')
+        left: 2rem
 
     & .hero__header-menu
       position: absolute
@@ -32,13 +34,15 @@
       justify-content: flex-end
       align-items: center
       padding: 0
-      gap: 2em
-      right: 8em
-      top: 1.3em
+      gap: 2rem
+      right: 8rem
+      top: 1.3rem
+      @include media('<=sm')
+        right: 2rem
 
       & .hero__burger-menu
-        width: 2.5em
-        height: 2.25em
+        width: 2.5rem
+        height: 2.25rem
         display: flex
         justify-content: space-around
         flex-flow: column nowrap
@@ -65,117 +69,88 @@
     & .hero__menu-container
       display: none
       position: absolute
-      top: 5em
+      top: 5rem
       left: 0
       width: 100%
       background-color: #333
-      padding: 20px
+      padding: 1.25rem
       box-sizing: border-box
 
-    a
-      display: block
-      color: white
-      padding: 10px 20px
-      text-decoration: none
+      a
+        display: block
+        color: white
+        text-decoration: none
 
-      &:hover
-        background-color: #444
+        &:hover
+          background-color: #444
 
   .hero__content
     display: flex
     flex-direction: column
     align-items: flex-start
     padding: 0
-    gap: 4em
+    gap: 4rem
     position: absolute
-    width: 60vw
-    height: 18.7em
-    left: 8em
-    top: 12em
+    height: 18.7rem
+    left: 8rem
+    top: 12rem
+    @include media('<=sm')
+      left: 2rem
 
     .hero__main-text
       display: flex
       flex-direction: column
       align-items: flex-start
-      gap: 0.8em
+      gap: 0.8rem
 
       .hero__title
         font-family: 'Montserrat', sans-serif
         font-style: normal
         font-weight: 700
-        font-size: 4em
+        font-size: 4rem
         line-height: 140%
         color: #FFFFFF
+        @include media('<=xs')
+          font-size: 3rem
 
       .hero__small-text
         font-family: 'Montserrat', sans-serif
         font-style: normal
         font-weight: 400
-        font-size: 1em
+        font-size: 1rem
         line-height: 160%
         color: #FFFFFF
-        width: 450px
+        width: 28rem
+        @include media('<=xs')
+          width: 80vw
+          font-size: 0.8rem
 
   .hero__button
     display: flex
     justify-content: center
     align-items: center
-    padding: 1.25em 2em
-    gap: 0.6em
-    width: 12.5em
-    height: 3.5em
+    padding: 1.25rem 2rem
+    gap: 0.6rem
+    width: 12.5rem
+    height: 3.5rem
     background: #EC6C00
     font-family: 'Montserrat', sans-serif
     color: #FFFFFF
     cursor: pointer
 
   .hero__social-links
-    width: 12.25em
-    height: 1.5em
+    width: 12.25rem
+    height: 1.5rem
     position: absolute
-    top: 48em
-    right: 8em
-    gap: 1.25em
+    top: 48rem
+    right: 8rem
+    gap: 1.25rem
     opacity: 0.8px
     display: flex
     flex-direction: row
+    @include media('<=sm')
+      right: 2rem
 
     img
-      width: 1.5em
-      height: 1.5em
-
-//---------------------------------------------------------------
-// @media (max-width: 768px)
- 
-// .hero
-//   .hero__header
-//     .hero__header-logo
-//       left: 12em
-
-//     .hero__header-menu
-//       right: 12em
-
-//   .hero__content
-
-//     width: 70vw
-//     left: 12em
-//     top: 16em
- 
-// ----------------------------------------------------------
-//   @media (max-width: 480px)
-  
-
-// .hero
-//   .hero__header
-//     .hero__header-logo
-//       left: 2em
-
-//     .hero__header-menu
-//       right: 2em
-
-//   .hero__content
-
-//     width: 70vw
-//     left: 2em
-//     top: 3em
-  
+      width: 1.5rem
+      height: 1.5rem

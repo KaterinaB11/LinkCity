@@ -62,3 +62,10 @@
     #{$color}-s: #{strip-unit($saturation)};
     #{$color}-l: #{strip-unit($lightness)};
 }
+
+$font-family: 'Montserrat', sans-serif;
+$primary-color: #333333; // Mine Shaft
+$secondary-color: #EC6C00; // Clementine
+$note-color: #888888; // Oslo Gray
+$fiord-color: #4E5B70;
+$background-white: #FFFFFF;
