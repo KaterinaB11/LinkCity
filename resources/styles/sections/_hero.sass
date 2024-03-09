@@ -76,13 +76,25 @@
       padding: 1.25rem
       box-sizing: border-box
 
-      a
+      .link
         display: block
         color: white
         text-decoration: none
 
         &:hover
-          background-color: #444
+          color: $secondary-color
+
+      .link.active
+        color: $secondary-color
+        font-weight: bold
+        text-decoration: underline
+
+    .hero__menu-container.active
+      display: flex
+      justify-content: space-evenly
+      gap: 2rem
+      background: rgba(0, 0, 0, 0.1)
+      backdrop-filter: blur(6px)
 
   .hero__content
     display: flex

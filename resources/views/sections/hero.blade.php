@@ -14,11 +14,11 @@
             </div>
             <div class="hero__menu-container" id="menu-container">
                 <!-- Initially hidden in burger menu -->
-                <a href="#">Domů</a>
-                <a href="#">Projekty</a>
-                <a href="#">Galerie</a>
-                <a href="#">O nás</a>
-                <a href="#">Kontakt</a>
+                <a class="link" href="#">Domů</a>
+                <a class="link" href="#">Projekty</a>
+                <a class="link" href="#">Galerie</a>
+                <a class="link" href="#">O nás</a>
+                <a class="link" href="#">Kontakt</a>
             </div>
         </header>
     

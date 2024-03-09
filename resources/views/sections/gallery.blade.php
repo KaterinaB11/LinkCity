@@ -16,4 +16,18 @@
             </a>
         </div>
     </div>
+    <div id="myModal" class="modal">
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+
+        <!-- Navigation -->
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+    </div>
 </section>
