@@ -4,6 +4,7 @@ import {createApp} from "petite-vue";
 import.meta.glob([ '@images/**' ])
 import "@styles/app.sass"
 
+
 interface Header {
     opened: boolean
     handleOpenedHeader(state: boolean): void
@@ -18,7 +19,6 @@ const headerEl = document.querySelector('[data-header]'),
     }
 headerEl && createApp(headerScope).mount(headerEl)
 //--------------------------------------------------------------------------------hero
-
 const burgerMenu = document.getElementById("burger-menu");
 const menuContainer = document.getElementById("menu-container");
 const hero = document.querySelector(".hero");
@@ -53,6 +53,7 @@ headerLinks.forEach((link) => {
     });
   });
 
+
   //--------------------------------------------------------------------------------projects
 
 const projectsLinks = document.querySelectorAll(".header__link")
@@ -68,17 +69,14 @@ projectsLinks.forEach((link) => {
 
   //--------------------------------------------------------------------------------gallery
 
-  // Get the modal
+
 const modal = document.getElementById("myModal") as HTMLDivElement;
 
-// Get the image and insert it inside the modal
 const modalImg = document.getElementById("img01") as HTMLImageElement;
 const captionText = document.getElementById("caption") as HTMLDivElement;
 
-// Get the <span> element that closes the modal
 const closeButton = document.getElementsByClassName("close")[0] as HTMLSpanElement;
 
-// Get the navigation buttons
 const prevButton = document.querySelector(".prev") as HTMLAnchorElement;
 const nextButton = document.querySelector(".next") as HTMLAnchorElement;
 
