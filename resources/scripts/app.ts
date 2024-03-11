@@ -77,15 +77,16 @@ const captionText = document.getElementById("caption") as HTMLDivElement;
 
 const closeButton = document.getElementsByClassName("close")[0] as HTMLSpanElement;
 
+
 const prevButton = document.querySelector(".prev") as HTMLAnchorElement;
 const nextButton = document.querySelector(".next") as HTMLAnchorElement;
 
-// TypeScript type assertion for NodeList to HTMLImageElement array
+
 const images = Array.from(document.querySelectorAll(".gallery img")) as HTMLImageElement[];
 
 let currentIndex = 0;
 
-// Function to open modal with specific image
+// open modal with specific image
 const openModal = (index: number) => {
   modal.style.display = "block";
   modalImg.src = images[index].src;
@@ -98,18 +99,29 @@ images.forEach((img, index) => {
   img.onclick = () => openModal(index);
 });
 
-// Close the modal
+// Close the modal with X
 closeButton.onclick = function() {
   modal.style.display = "none";
 }
 
-// Function to navigate to the next image
+// keyboard esc and arrows for closing or moving the images
+document.addEventListener("keydown", (event: KeyboardEvent) => {
+  if (event.key === "Escape") {
+    modal.style.display = "none";
+  } else if (event.key === "ArrowRight") {
+    showNextImage();
+  } else if (event.key === "ArrowLeft") {
+    showPrevImage();
+  }
+});
+
+//next image with click
 const showNextImage = () => {
   currentIndex = (currentIndex + 1) % images.length;
   openModal(currentIndex);
 }
 
-// Function to navigate to the previous image
+//previous image with click
 const showPrevImage = () => {
   currentIndex = (currentIndex - 1 + images.length) % images.length;
   openModal(currentIndex);
@@ -119,9 +131,5 @@ const showPrevImage = () => {
 nextButton.addEventListener('click', showNextImage);
 prevButton.addEventListener('click', showPrevImage);
 
-// Close the modal if click outside of the img
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+
+
