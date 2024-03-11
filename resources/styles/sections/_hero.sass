@@ -7,7 +7,7 @@
   background-size: cover
   background-position: center
 
-  & .hero__header
+  &__header
     display: flex
     flex-direction: row
     position: absolute
@@ -18,7 +18,7 @@
     background: rgba(0, 0, 0, 0.1)
     backdrop-filter: blur(6px)
 
-    & .hero__header-logo
+    &-logo
       position: absolute
       width: 6.5rem
       height: 2.5rem
@@ -27,7 +27,7 @@
       @include media('<=sm')
         left: 2rem
 
-    & .hero__header-menu
+    &-menu
       position: absolute
       display: flex
       flex-direction: row
@@ -40,7 +40,7 @@
       @include media('<=sm')
         right: 2rem
 
-      & .hero__burger-menu
+      .hero__burger-menu
         width: 2.5rem
         height: 2.25rem
         display: flex
@@ -66,7 +66,7 @@
         line-height: 160%
         color: white
 
-    & .hero__menu-container
+    .hero__menu-container
       display: none
       position: absolute
       top: 5rem
@@ -95,6 +95,8 @@
       gap: 2rem
       background: rgba(0, 0, 0, 0.1)
       backdrop-filter: blur(6px)
+      @include media('<=xs')
+        flex-wrap: wrap
 
   .hero__content
     display: flex
