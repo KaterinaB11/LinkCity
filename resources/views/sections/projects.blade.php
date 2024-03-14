@@ -6,10 +6,10 @@
                     <h2>PROJEKTY</h2>
                 </div>
                 <div class="projects__header-menu">
-                    <a class="header__link" href="#">Vše <sup>12</sup></a>
-                    <a class="header__link" href="#">Rezidenční <sup>12</sup></a>
-                    <a class="header__link" href="#">Industriální <sup>12</sup></a>
-                    <a class="header__link" href="#">Urbanistické <sup>12</sup></a>
+                    <a class="header__link" href="">Vše <sup>12</sup></a>
+                    <a class="header__link" href="">Rezidenční <sup>4</sup></a>
+                    <a class="header__link" href="">Industriální <sup>5</sup></a>
+                    <a class="header__link" href="">Urbanistické <sup>3</sup></a>
                 </div>
             </div>
             <div class="projects__main-content">
@@ -28,7 +28,7 @@
                             <h6 class="container__title">Orlickoústecká nemocnice</h6>
                         </div>
                         <div class="container__link">
-                            <a href="#">Zobrazit více →</a>
+                            <a href="">Zobrazit více →</a>
                         </div>
                     </div>
                 </div>
@@ -47,7 +47,7 @@
                             <h6 class="container__title">Rezidence Chrudimpark</h6>
                         </div>
                         <div class="container__link">
-                            <a href="#">Zobrazit více →</a>
+                            <a href="">Zobrazit více →</a>
                         </div>
                     </div>
                 </div>
@@ -66,7 +66,7 @@
                             <h6 class="container__title">ČVÚT - Institut robotiky a kybernetiky</h6>
                         </div>
                         <div class="container__link">
-                            <a href="#">Zobrazit více →</a>
+                            <a href="">Zobrazit více →</a>
                         </div>
                     </div>
                 </div>
@@ -85,7 +85,7 @@
                             <h6 class="container__title">Viladomy Lučištníků</h6>
                         </div>
                         <div class="container__link">
-                            <a href="#">Zobrazit více →</a>
+                            <a href="">Zobrazit více →</a>
                         </div>
                     </div>
                 </div>
@@ -104,7 +104,7 @@
                             <h6 class="container__title">Nexen European Plant Project</h6>
                         </div>
                         <div class="container__link">
-                            <a href="#">Zobrazit více →</a>
+                            <a href="">Zobrazit více →</a>
                         </div>
                     </div>
                 </div>
@@ -123,14 +123,14 @@
                             <h6 class="container__title">Bytové domy na Radosti II</h6>
                         </div>
                         <div class="container__link">
-                            <a href="#">Zobrazit více →</a>
+                            <a href="">Zobrazit více →</a>
                         </div>
                     </div>
                 </div>
 
             </div>
             <div class="projects__button">
-                <a class="button" href="#">Zobrazit více</a>
+                <a class="button" href="">Zobrazit více</a>
             </div>
         </div>
     </div>
