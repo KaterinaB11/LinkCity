@@ -4,12 +4,10 @@
     justify-content: space-between
     align-items: center
     padding: 5rem 8rem
-    gap: 7.5rem
-    width: 100vw
-    height: auto
-    background: $background-white
+    gap: 1.5rem
+
     @include media('<=md')
-        padding: 3rem 4rem 
+        padding: 3rem 4rem
         gap: 2rem
     @include media('<=sm')
         padding: 1rem 2rem
@@ -23,6 +21,7 @@
         padding: 0rem
         width: 40vw
         height: 26rem
+
         @include media('<=md')
             gap: 1rem
         @include media('<=sm')
@@ -73,6 +72,11 @@
 
         .about-us__button
             @include button
+            cursor: pointer
+            transition: all 0.3s ease-in-out
+            &:hover
+                transform: scale(1.05)
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
 
     .about-us__img-div
         width: 40vw
